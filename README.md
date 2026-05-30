@@ -14,24 +14,29 @@ This project analyses 31,000+ orders from an Indian e-commerce store to understa
 
 ##  🧹 Data Quality Issues Found and Fixed
 
--  Removed **5** columns that were not useful for analysis
-- Sorted dates that were in different data types
-- Removed **~20** rows with invalid quantity values
+- Removed 5 irrelevant columns, including Index, SKU, ship-city, ship-postalcode and ship-country.
+- Fixed date column, which had mixed data types — 
+  some dates stored as text, others as numbers
+- Removed ~20 rows with invalid values
+- Standardised the gender column, which had inconsistent entries 
+  like 'M', 'Men', 'W' — normalised to 'Men' and 'Women'
+- Checked and confirmed no duplicate order IDs existed
 
 ##  💡 Key Business Insights
 - **Women** account for **65%** of total orders compared to 35% for men.
-- The **Adults** age group is the most active buyers among the age groups.
-- Highest orders are from **Amazon, Myntra and Flipkart**.
-- **Maharashtra, Karnataka and UP** are the top 3 states by orders.
+- The **Adults** age group is the most active buyers among the age groups, having **80%** of spending share.
+- Highest orders are from **Amazon, Myntra and Flipkart**, contributing to **80%** of total quantity ordered. 
+- **Maharashtra, Karnataka and UP** are the top 3 states by orders, contributing to approx 11,400 orders.
 
 ##  📊 Dashboard Preview
 
 ![Dashboard Page](https://github.com/bhavyasanoria01-lab/Store-Analysis-Using-Excel-Using-Pivot-Tables-and-Pivot-Charts-/blob/e568ac9714f9e0ee6b310f73d42326f2156beffd/Final%20Dashboard..png)
 
 
-##  📝 Conclusion
+## 🎯 Conclusion
+
 The store should target women in the **Adult** age group from **Maharashtra, Karnataka and UP** by giving discount coupons and offers on **Amazon, Myntra and Flipkart**.
 
 ## 📝 Learnings & Challenges
-The most valuable technical skill I learned in this project was working with Slicers in Excel and connecting them to multiple Pivot Charts simultaneously. Initially, each slicer was only controlling one chart. I later learned how to use the Report Connections feature in Excel to link a single slicer to all charts on the dashboard, making the entire dashboard interactive and dynamic. This taught me how a well connected dashboard should behave and one filter click should update every visual at once, not just one.
+The most valuable technical skill I learned in this project was working with Slicers in Excel and connecting them to multiple Pivot Charts simultaneously. Initially, each slicer was only controlling one chart. I later learned how to use the Report Connections feature in Excel to link a single slicer to all charts on the dashboard, making the entire dashboard interactive and dynamic. This taught me how a well connected dashboard should behave. One filter click should update every visual at once, not just one.
 
